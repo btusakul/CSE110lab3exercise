@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.btusa_000.cse110_lab3.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <EditText
+        android:id="@+id/const1"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:inputType="numberSigned"
+        android:textAlignment="center"
+        android:singleLine="true"/>
+
+    <TextView
+        android:id="@+id/plus"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/const1"
+        android:text="@string/Plus"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        />
+
+    <EditText
+        android:id="@+id/const2"
+        android:inputType="numberSigned"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/plus"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:id="@+id/equals"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/const2"
+        android:text="@string/Equals"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:id="@+id/sum"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/equals"
+        android:textAlignment="center"
+        />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/sum"
+        android:id="@+id/button"
+        android:text="@string/Add"
+        android:enabled="true"
+        android:layout_gravity="center"
+        />
+
+</RelativeLayout>
